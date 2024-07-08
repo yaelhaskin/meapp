@@ -1,0 +1,23 @@
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45%;
+}
+
+.link-item {
+  cursor: pointer;
+  margin-inline: 1em;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--font-family);
+  font-weight: var(--light-weight);
+  font-size: var(--small-font);
+}
+
+.bottomLine {
+  width: 55%;
+  height: 50%;
+  background-color: white;
+  margin-top: 5px;
+}

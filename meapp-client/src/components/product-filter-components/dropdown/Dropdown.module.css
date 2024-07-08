@@ -1,0 +1,33 @@
+.dropdown {
+    position: absolute;
+    top: 20%;
+    left: 6.3%;
+    height: 50px;
+}
+
+.formControl > div > fieldset {
+    border-color: #BD1C4D;
+    border-radius: 25px;
+    height: 100%;
+}
+
+.formControl > div > fieldset:hover {
+    border-color: red
+}
+
+.formControl > div > svg {
+    color: #BD1C4D;
+}
+
+.formControl > label {
+    color: #BD1C4D;
+}
+
+.formControl > p {
+    color: #BD1C4D;
+}
+
+.formControl > div > * {
+    color: #BD1C4D;
+}
+

@@ -1,0 +1,52 @@
+.ProductsPage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.spacer {
+    height: 6%;
+}
+
+.background-image {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    width: 40%;
+}
+
+.card-section {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    padding: 2em; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF4F8;
+    overflow-x: hidden;
+}
+
+.page-filters {
+    height: 30%;
+    margin-right: 5%;
+}
+
+.page-filters > * {
+    color: #A30446;
+}
+
+.galleryItem {
+    width: 29%;
+    height: 60%;
+    margin: 20px;
+}
+
+@media screen and (min-width: 1800px) {
+    .galleryItem {
+        width: 20%;
+    }
+}
+

@@ -1,0 +1,49 @@
+    .page-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background-image {
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .svg-image{
+        z-index: -1;
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        width: 10%;
+    }
+
+    .gallary-item {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: auto;
+        align-items: center;
+    }
+
+    .back-btn-text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        color: #B14E69; 
+        font-size: 1.2rem;
+        border-radius: 52px;
+        padding: 10px 20px;
+        margin: 10px;
+    }
+
+    .back-btn-text:hover {
+        cursor: pointer;
+        background-color: #F8F7FB;
+    }

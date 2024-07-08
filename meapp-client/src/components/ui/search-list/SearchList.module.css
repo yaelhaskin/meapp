@@ -1,0 +1,27 @@
+.searchList {
+    position: absolute;
+    margin-right: 10px;
+    z-index: 5;
+    width: 25%;
+}
+
+.searchList > ul {
+    background-color: aqua;
+    scroll-snap-align: right;
+    box-shadow: 20px 30px 96px -30px rgba(13, 5, 54, 0.44);
+    border-radius: 20px;
+}
+
+.listItem {
+    /* margin: 5px; */
+    padding: 10px;
+    background-color: white;
+    line-height: 2;
+
+    list-style-type: none;
+}
+
+.listItem:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}

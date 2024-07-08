@@ -1,0 +1,7 @@
+.small-title-italic {
+  font-size: var(--small-font);
+  font-weight: var(--light-weight);
+  font-style: italic;
+  color: var(--titles-color);
+  line-height: 130%;
+}

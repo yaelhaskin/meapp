@@ -1,0 +1,7 @@
+.big-title {
+  font-size: var(--big-font);
+  font-weight: var(--bold-weight);
+  color: var(--titles-color);
+  line-height: 130%;
+  white-space: break-spaces;
+}

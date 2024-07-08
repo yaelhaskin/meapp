@@ -1,0 +1,7 @@
+.sub-title {
+  font-size: var(--medium-font);
+  font-weight: var(--medium-weight);
+  color: var(--titles-color);
+  line-height: 130%;
+  white-space: break-spaces;
+}

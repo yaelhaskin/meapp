@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Rubik;
+  src: url(../src/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+html {
+  border: none;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  border: none;
+}
+
+.App {
+  border: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+}
+
+.LoadingPage {
+  position: absolute;
+}
+
+* {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  /* border: #00ffea 1px solid; */
+  font-family: Rubik, Arial;
+}
+
+:root {
+  /* Background colors */
+  --main-bg-color: #fff;
+  --secondary-bg-color: #EEECF3;
+
+  /* call to action colors */
+  --main-cta-color: #190f4c;
+  --main-cta-hover-color: #312766;
+  --main-cta-text-color: #ffffff;
+
+  /* call to action (secondary) colors */
+  --secondary-cta-color: transparent;
+  --secondary-cta-hover-color: #f8f7fb;
+  --secondary-cta-text-color: #B14E69;
+
+  --random-shapes-bg-color: #eeecf3;
+
+  /* text colors */
+  --titles-color: #8A023A;
+  --text-color: #954259;
+  --text-color-light: #fff;
+  --error-text-color: #ff3d00;
+  --hint-text-color: #AE0149;
+
+  /* border style */
+  --border-color: #aaa7bb;
+  --active-border-color: #AE0149;
+  --error-border-color: #ff3d00;
+  --border-radius: 12px;
+
+  /* font weights */
+  --light-weight: 350;
+  --medium-weight: 500;
+  --bold-weight: 700;
+
+  /* font sized */
+  --big-font: 44px;
+  --medium-font: 21px;
+  --small-font: 18px;
+
+  /* Effects */
+  --box-shadow: drop-shadow(8px 8px 15px rgba(13, 5, 54, 0.30));
+  --box-shadow-right: drop-shadow(-8px 8px 15px rgba(13, 5, 54, 0.30));
+  --box-shadow-top: drop-shadow(8px 8px 15px rgba(13, 5, 54, 0.30));
+  --box-shadow-bottom: drop-shadow(8px 8px 15px rgba(13, 5, 54, 0.30));
+}
+
+
+.box-shadow {
+  filter: var(--box-shadow);
+}

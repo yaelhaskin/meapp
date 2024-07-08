@@ -1,0 +1,5 @@
+.arrow {
+  cursor: pointer;
+  filter: var(--box-shadow);
+  overflow: visible;
+}

@@ -1,0 +1,7 @@
+.text {
+  font-weight: var(--light-weight);
+  font-size: 1.18rem;
+  line-height: 160%;
+  text-align: right;
+  color: var(--text-color);
+}

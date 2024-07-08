@@ -1,0 +1,121 @@
+.AddNewProduct {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.background-image {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.svg-image1{
+    position: absolute;
+    width: 4%;
+    top: 70%;
+    left: 80%;
+    z-index: -1;
+}
+.svg-image2{
+    position: absolute;
+    width: 10%;
+    top: 30%;
+    left: 10%;
+    opacity: 80%;
+    z-index: -1;
+}
+
+span > input {
+    border: solid #AE0149 1px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+a {
+    line-height: 3rem;
+}
+
+.formContainer {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    background: var(--main-bg-color);
+    box-shadow: 20px 20px 96px -30px rgba(13, 5, 54, 0.44);
+    border-radius: var(--border-radius);
+
+    color: #AE0149; 
+}
+
+.formControl {
+    width: 100%;
+    height: 80%;
+}
+.formTexts {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formInputs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.submitBtn {
+    align-self: flex-end;
+    width: 27%;
+    height: 7%;
+    margin-top: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #AE0149;
+    box-shadow: 5px 5px 10px 2px rgba(13, 5, 54, 0.44);
+    border-radius: 25px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.submitBtn:hover {
+    cursor: pointer;
+    background-color: #D7008A;
+}
+.backToMain {
+    align-self: center;
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+}
+.uploadedImage {
+    width: 30%;
+}
+.resetBtn {
+    width: 27%;
+    height: 30%;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #726a6c;
+    border: solid 2px #726a6c;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.resetBtn:hover {
+    color: white;
+    background-color: #726a6c;
+}

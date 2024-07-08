@@ -1,0 +1,6 @@
+.small-title {
+  font-size: var(--small-font);
+  font-weight: var(--medium-weight);
+  color: var(--titles-color);
+  line-height: 130%;
+}

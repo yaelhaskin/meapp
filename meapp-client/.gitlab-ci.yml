@@ -1,0 +1,51 @@
+stages:
+  - build
+  - push
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"
+
+variables:
+  # configure pipeline variables
+  REPO: "meapp-frontend"
+  build_tag: $CI_COMMIT_BRANCH-$CI_COMMIT_SHORT_SHA
+
+
+
+.build_image:
+  # Template for image build step
+  image:
+    # Specify Image to use for job
+    name: gcr.io/kaniko-project/executor:v1.9.0-debug
+    entrypoint: [""]
+
+  script:
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile Dockerfile --destination "sharedservicesbsmchprodacr.azurecr.io/teamea/$REPO:$build_tag" # // Build the image into a tar file
+
+.push_image:
+
+  # Template for image push step
+  image:
+    # Specify Image to use for job
+    name: gcr.io/go-containerregistry/crane:debug
+    entrypoint: [""]
+    
+  script:
+    - echo "Logging into the container registry..."
+    - crane auth login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY # // Login into image repository
+    - echo "Login successful! Updating image tag..."
+    - crane tag sharedservicesbsmchprodacr.azurecr.io/teamea/${REPO}:$build_tag latest # // Retag the image with the "latest" tag
+    - echo "Image tag updated!"
+
+build:
+  stage: build
+  extends: .build_image
+  # Use .build_image template
+
+push:
+  stage: push
+  extends: .push_image
+  # Use .push_image template
+  needs: 
+    - build

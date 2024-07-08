@@ -1,0 +1,10 @@
+.carousel-container {
+  overflow: visible;
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  border-radius: var(--border-radius);
+  height: 100%;
+  min-width: 400px;
+}

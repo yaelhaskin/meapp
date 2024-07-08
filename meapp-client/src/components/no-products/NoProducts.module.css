@@ -1,0 +1,14 @@
+.NoProducts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+}
+
+.corgi {
+    width: 15%;
+    margin: 25px;
+    -webkit-user-drag: none;
+}

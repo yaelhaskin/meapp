@@ -1,0 +1,85 @@
+.bgImage1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+}
+
+.bgImage2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+}
+
+.topPart {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigTextBlock {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoText {
+    margin-top: 25px;
+    white-space: break-spaces;
+}
+
+.people {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.person {
+    margin: 0.2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarImg {
+    width: 65%;
+    margin-bottom: 8px;
+}
+
+.leader {
+    width: 30%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.personText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team101 {
+    top: 88%;
+    left: 25%;
+    width: 45%;
+    background-color: white;
+}
+
+.team101Hover {
+    position: absolute;
+    width: 17%;
+    height: 21%;
+    z-index: 2;
+}
